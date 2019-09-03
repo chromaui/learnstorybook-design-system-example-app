@@ -1,26 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import UserList from './components/UserList';
+
+const users = [
+  {
+    id: '1',
+    name: 'Dominic Nyugen',
+    avatarUrl: 'https://avatars2.githubusercontent.com/u/263385',
+  },
+  {
+    id: '1',
+    name: 'Tom Coleman',
+    avatarUrl: 'https://avatars2.githubusercontent.com/u/132554',
+  },
+];
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <UserList users={users} />;
 }
 
 export default App;
