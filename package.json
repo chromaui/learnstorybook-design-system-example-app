@@ -32,10 +32,10 @@
     ]
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^5.2.0-rc.2",
-    "@storybook/addon-docs": "^5.2.0-rc.2",
-    "@storybook/addon-links": "^5.2.0-rc.2",
-    "@storybook/addons": "^5.2.0-rc.2",
-    "@storybook/react": "^5.2.0-rc.2"
+    "@storybook/addon-actions": "^5.2.1",
+    "@storybook/addon-docs": "^5.2.1",
+    "@storybook/addon-links": "^5.2.1",
+    "@storybook/addons": "^5.2.1",
+    "@storybook/react": "^5.2.1"
   }
 }
