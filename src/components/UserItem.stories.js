@@ -10,8 +10,8 @@ export default {
 // to copy to pull request
 const Template = (args) => <UserItem {...args} />;
 
-export const simple = Template.bind({});
-simple.args = {
+export const Simple = Template.bind({});
+Simple.args = {
   user: {
     name: "Dominic Nyugen",
     avatarUrl: "https://avatars2.githubusercontent.com/u/263385",

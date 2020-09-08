@@ -10,8 +10,8 @@ export default {
 
 const Template = (args) => <UserList {...args} />;
 
-export const simple = Template.bind({});
-simple.args = {
+export const Simple = Template.bind({});
+Simple.args = {
   users: [
     {
       id: "1",
