@@ -1,14 +1,19 @@
-import React from 'react';
+import React from "react";
 
-import UserItem from './UserItem';
+import UserItem from "./UserItem";
 
 export default {
   component: UserItem,
-  title: 'components/UserItem',
+  title: "components/UserItem",
 };
 
-export const simple = () => (
-  <UserItem
-    user={{ name: 'Dominic Nyugen', avatarUrl: 'https://avatars2.githubusercontent.com/u/263385' }}
-  ></UserItem>
-);
+// to copy to pull request
+const Template = (args) => <UserItem {...args} />;
+
+export const simple = Template.bind({});
+simple.args = {
+  user: {
+    name: "Dominic Nyugen",
+    avatarUrl: "https://avatars2.githubusercontent.com/u/263385",
+  },
+};
