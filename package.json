@@ -3,9 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.1",
+    "web-vitals": "^0.2.4",
     "styled-components": "^4.3.2"
   },
   "scripts": {
@@ -13,8 +17,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "storybook": "start-storybook -p 9009",
+    "build-storybook": "build-storybook"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -32,14 +36,14 @@
     ]
   },
   "devDependencies": {
-    "@babel/core": "^7.11.4",
-    "@storybook/addon-actions": "^6.0.19",
-    "@storybook/addon-essentials": "^6.0.19",
-    "@storybook/addon-links": "^6.0.19",
-    "@storybook/node-logger": "^6.0.19",
-    "@storybook/preset-create-react-app": "^3.1.4",
-    "@storybook/react": "^6.0.19",
-    "babel-loader": "^8.1.0",
-    "react-is": "^16.13.1"
+    "@storybook/addon-actions": "^6.4.0",
+    "@storybook/addon-essentials": "^6.4.0",
+    "@storybook/addon-interactions": "^6.4.0",
+    "@storybook/addon-links": "^6.4.0",
+    "@storybook/node-logger": "^6.4.0",
+    "@storybook/preset-create-react-app": "^3.1.7",
+    "@storybook/react": "^6.4.0",
+    "@storybook/testing-library": "^0.0.7",
+    "@storybook/testing-react": "^1.0.0"
   }
 }
