@@ -7,4 +7,8 @@ module.exports = {
     "@storybook/preset-create-react-app",
     "@storybook/addon-interactions",
   ],
+  framework: "@storybook/react",
+  core: {
+    builder: "@storybook/builder-webpack4",
+  },
 };
