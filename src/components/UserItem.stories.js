@@ -1,19 +1,16 @@
-import React from "react";
-
 import UserItem from "./UserItem";
 
 export default {
   component: UserItem,
   title: "components/UserItem",
+  tags: ["autodocs"],
 };
 
-// to copy to pull request
-const Template = (args) => <UserItem {...args} />;
-
-export const Simple = Template.bind({});
-Simple.args = {
-  user: {
-    name: "Dominic Nyugen",
-    avatarUrl: "https://avatars2.githubusercontent.com/u/263385",
+export const Simple = {
+  args: {
+    user: {
+      name: "Dominic Nyugen",
+      avatarUrl: "https://avatars2.githubusercontent.com/u/263385",
+    },
   },
 };

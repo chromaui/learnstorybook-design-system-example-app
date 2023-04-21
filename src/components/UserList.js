@@ -1,11 +1,13 @@
-import React from 'react';
+import React from "react";
 
-import UserItem from './UserItem';
+import UserItem from "./UserItem";
 
-export default ({ users }) => (
-  <>
-    {users.map(user => (
-      <UserItem key={user.id} user={user} />
-    ))}
-  </>
-);
+export default function UserList({ users }) {
+  return (
+    <>
+      {users.map((user) => (
+        <UserItem key={user.id} user={user} />
+      ))}
+    </>
+  );
+}

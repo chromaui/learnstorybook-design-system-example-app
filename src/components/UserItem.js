@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const Container = styled.div`
   background: #eee;
@@ -19,9 +19,11 @@ const Name = styled.span`
   font-size: 16px;
 `;
 
-export default ({ user: { name, avatarUrl } }) => (
-  <Container>
-    <Avatar src={avatarUrl} />
-    <Name>{name}</Name>
-  </Container>
-);
+export default function UserItem({ user: { name, avatarUrl } }) {
+  return (
+    <Container>
+      <Avatar src={avatarUrl} />
+      <Name>{name}</Name>
+    </Container>
+  );
+}
