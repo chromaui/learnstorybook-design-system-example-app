@@ -46,11 +46,13 @@ A quick look at the top-level files and directories included with this template.
     ├── node_modules
     ├── public
     ├── src
-    ├── .env
+    ├── .eslintrc.cjs
+    ├── .babelrc.json
     ├── .gitignore
-    ├── LICENSE
+    ├── .index.html
     ├── package.json
     ├── yarn.lock
+    ├── vite.config.js
     └── README.md
 
 1.  **`.storybook`**: This directory contains Storybook's [configuration](https://storybook.js.org/docs/react/configure/overview) files.
@@ -61,13 +63,21 @@ A quick look at the top-level files and directories included with this template.
 
 4.  **`src`**: This directory will contain all of the code related to what you will see on your application.
 
-5.  **`.gitignore`**: This file tells git which files it should not track or maintain during the development process of your project.
+5.  **`.eslintrc.cjs`**: This is a configuration file for [ESLint](https://eslint.org/), a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code, with the goal of making code more consistent and avoiding bugs.
 
-6.  **`package.json`**: Standard manifest file for Node.js projects, which typically includes project specific metadata (such as the project's name, the author among other information). It's based on this file that npm will know which packages are necessary to the project.
+6.  **`.babelrc.json`**: This is a configuration file for [Babel](https://babeljs.io/), a toolchain that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers or environments.
 
-7.  **`yarn.lock`**: This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(Do not change it manually).**
+7.  **`.gitignore`**: This file tells git which files it should not track or maintain during the development process of your project.
 
-8.  **`README.md`**: A text file containing useful reference information about the project.
+8.  **`.index.html`**: This is the HTML page that is served when generating a development or production build.
+
+9.  **`package.json`**: Standard manifest file for Node.js projects, which typically includes project specific metadata (such as the project's name, the author among other information). It's based on this file that npm will know which packages are necessary to the project.
+
+10. **`yarn.lock`**: This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(Do not change it manually).**
+
+11. **`vite.config.js`**: This is the configuration file for [Vite](https://vitejs.dev/), a build tool that aims to provide a faster and leaner development experience for modern web projects.
+
+12. **`README.md`**: A text file containing useful reference information about the project.
 
 ## Contribute
 
