@@ -1,5 +1,11 @@
-import PropTypes from "prop-types";
+import type { UserData } from "../types";
+
 import styled from "@emotion/styled";
+
+type UserItemProps = {
+  user: UserData;
+};
+
 const Container = styled.div`
   background: #eee;
   margin-bottom: 1em;
@@ -18,18 +24,11 @@ const Name = styled.span`
   font-size: 16px;
 `;
 
-export default function UserItem({ user: { name, avatarUrl } }) {
+export default function UserItem({ user: { avatarUrl, name } }: UserItemProps) {
   return (
     <Container>
-      <Avatar src={avatarUrl} />
+      <Avatar src={avatarUrl} alt="user avatar" />
       <Name>{name}</Name>
     </Container>
   );
 }
-
-UserItem.propTypes = {
-  user: PropTypes.shape({
-    name: PropTypes.string,
-    avatarUrl: PropTypes.string,
-  }),
-};
