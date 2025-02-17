@@ -1,12 +1,17 @@
+import type { Meta, StoryObj } from "@storybook/react";
+
 import UserList from "./UserList";
 
-export default {
+const meta = {
   component: UserList,
   title: "components/UserList",
   tags: ["autodocs"],
-};
+} satisfies Meta<typeof UserList>;
 
-export const Simple = {
+export default meta;
+type Story = StoryObj<typeof meta>;
+
+export const Simple: Story = {
   args: {
     users: [
       {
